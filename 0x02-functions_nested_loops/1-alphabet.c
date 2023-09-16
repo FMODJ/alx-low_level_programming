@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * Print_alphabet- this is the function of the task
+ * print_alphabet- this is the function of this task
  * Return: return 0
- */
+*/
 
 void print_alphabet(void);
 {
