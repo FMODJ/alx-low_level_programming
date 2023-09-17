@@ -1,32 +1,15 @@
-#ifndef MAIN_H
-#define MAIN_H
-int _putchar(char c);
-int _isupper(int c);
-int _isdigit(int c);
-void print_numbers(void);
-void print_most_numbers(void);
-void more_numbers(void);
-void print_line(int n);
-void print_diagonal(int n);
-void print_square(int size);
-void print_triangle(int size);
-int mul(int a, int b);
-void print_number(int n);
-
-#endif
-
-_putchar
-#include <unistd.h>
+#include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * _isupper - uppercase letters
+ * @c: char to check
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: 0 or 1
  */
-int _putchar(char c)
+int _isupper(int c)
 {
-	return (write(1, &c, 1));
+	if (c >= 'A' && c <= 'Z')
+	return (1);
+	else
+	return (0);
 }
-
